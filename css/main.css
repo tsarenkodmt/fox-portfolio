@@ -27,6 +27,13 @@ button {
   margin: 0 auto;
 }
 
+body {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  font-family: "Montserrat", serif;
+}
+
 .header-fixed {
   position: fixed;
   z-index: 3;
@@ -34,21 +41,49 @@ button {
   left: 0;
   right: 0;
   background: rgb(64, 53, 53);
+  padding: 23px 0 25px;
 }
 .header .container {
   display: flex;
   align-items: center;
 }
 .header .nav {
-  background: red;
   flex: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .header .menu {
-  background: yellow;
   display: flex;
   justify-content: center;
   flex: 1;
+  gap: 54px;
+}
+.header .logo {
+  width: 40px;
+}
+.header .link {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  font-family: "Montserrat", serif;
+  text-transform: uppercase;
+  color: #a9a9aa;
+  transition: 0.3s linear;
+}
+.header .link:hover {
+  color: #fe390c;
+}
+.header-btn {
+  border: 1px solid #fe390c;
+  border-radius: 4px;
+  padding: 12px 16px;
+  width: 92px;
+  height: 39px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  font-family: "Montserrat", serif;
+  text-transform: uppercase;
+  color: #fe390c;
 }/*# sourceMappingURL=main.css.map */

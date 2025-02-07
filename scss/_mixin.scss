@@ -1,0 +1,13 @@
+@mixin fontPrimary($size, $weight, $lh : 1) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $lh;
+    font-family: "Montserrat", serif;
+}
+
+@mixin fontSecondary($size, $weight, $lh : 1) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $lh;
+    font-family: "Anton", serif;
+}

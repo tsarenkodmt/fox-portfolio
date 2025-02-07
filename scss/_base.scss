@@ -27,3 +27,11 @@ button {
     width: 100%;
     margin: 0 auto;
 }
+
+body {
+    @include fontPrimary(14px, 400);
+}
+
+.orange-color {
+    
+}
