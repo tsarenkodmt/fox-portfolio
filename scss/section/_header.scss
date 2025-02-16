@@ -5,8 +5,13 @@
         top: 0;
         left: 0;
         right: 0;
-        background: rgb(64, 53, 53);
         padding: 23px 0 25px;
+        background: transparent;
+        transition: .4s linear;
+
+        &.active{
+            background: $primary-color-black;
+        }
     }
 
     .container {

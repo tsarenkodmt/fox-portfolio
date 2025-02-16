@@ -33,5 +33,14 @@ body {
 }
 
 .orange-color {
-    
+    background: $primary-color-main-color;
+    color: #fff;
+}
+
+.text-orange {
+    color: $primary-color-main-color;
+}
+
+.social {
+    display: flex;
 }
