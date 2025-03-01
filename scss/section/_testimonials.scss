@@ -1,0 +1,27 @@
+.testimonials {
+    padding: 120px 0px;
+
+    .slider-block {
+        display: flex;
+        justify-content: center;
+        gap: 120px;
+
+        figure {
+            max-width: 364px;
+            width: 100%;
+            filter: brightness(70%);
+        }
+    }
+
+    .testimonial-content {
+        max-width: 655px;
+        width: 100%;
+    }
+
+    .content-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}

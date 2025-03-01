@@ -44,3 +44,25 @@ body {
 .social {
     display: flex;
 }
+
+.inner-block {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    .inner-num{
+        @include fontSecondary(80px,600);
+        font-weight: 600;
+        font-size: 80px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+    }
+
+    .inner-title{
+        @include fontSecondary(40px, 400);
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: $primary-color-black;
+    }
+}
+

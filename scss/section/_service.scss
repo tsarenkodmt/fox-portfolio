@@ -1,0 +1,58 @@
+.service {
+    padding: 80px 0px 84px;
+
+    &-topic {
+        justify-content: center;
+        margin-bottom: 57px;
+    }
+
+
+    &-info {
+        display: flex;
+        align-items: center;
+        gap: 61px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &-info-card {
+        width: 230px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 39px 20px 20px 20px;
+        background: $secondary-color-grey-10;
+        transition: 0.5s linear;
+        cursor: pointer;
+
+        svg{
+            fill: $primary-color-main-color;
+        }
+
+        &:hover{
+            background: $primary-color-main-color;
+
+            .service-title,
+            .service-text{
+                color: #fff;
+            }
+
+            svg{
+                fill:#fff;
+            }
+        }
+    }
+
+    &-title {
+        @include fontPrimary(16px, 700, 1.87);
+        letter-spacing: -0.04em;
+        color: $primary-color-black;
+        margin: 24px 0px 8px;
+    }
+
+    &-text {
+        @include fontPrimary(14px, 500, 1.71);
+        letter-spacing: -0.02em;
+        color: $text-color-grey;
+    }
+}

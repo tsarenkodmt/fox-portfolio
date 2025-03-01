@@ -72,28 +72,7 @@
         max-width: 521px;
     }
 
-    .inner-block {
-        display: flex;
-        align-items: center;
-        gap: 24px;
-    }
-
-    &-num {
-        @include fontSecondary(80px,600);
-        font-weight: 600;
-        font-size: 80px;
-        letter-spacing: 0.02em;
-        text-transform: uppercase;
-    }
-
-    &-title {
-        @include fontSecondary(40px, 400);
-        letter-spacing: 0.02em;
-        text-transform: uppercase;
-        color: $primary-color-black;
-    }
-
-    .about-text {
+    &-text {
         @include fontPrimary(14px, 500, 2.29);
         letter-spacing: -0.02em;
         color: $text-color-grey;
