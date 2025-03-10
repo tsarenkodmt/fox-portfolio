@@ -24,4 +24,103 @@
         align-items: center;
     }
 
+    .content-middle {
+        margin-top: 75px;
+        width: 430px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+
+        p {
+            font-weight: 500;
+            margin-bottom: 30px;
+            letter-spacing: -0.02em;
+            line-height: 2.29;
+            color: $primary-color-black;
+        }
+
+        svg {
+            margin-bottom: 24px;
+        }
+    }
+
+    .testimonial-name {
+        @include fontPrimary(16px, 700);
+        letter-spacing: -0.04em;
+        color: $primary-color-main-color;
+        margin-bottom: 12px;
+    }
+
+    .testimonial-job {
+        font-weight: 600;
+        line-height: 1.43;
+        letter-spacing: -0.04em;
+        color: $text-color-grey;
+    }
+
+    #fraction {
+        position: absolute;
+        top: 15px;
+        right: 25px;
+        transform: translate(50%, 50%);
+        @include fontSecondary(24px, 400);
+        color: #c4c4c4;
+        z-index: 20;
+    }
+
+    .fraction-number {
+        color: $primary-color-main-color;
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        display: none;
+    }
+
+    &-slider {
+
+        .testimonial-btn-prev,
+        .testimonial-btn-next {
+            width: 40px;
+            height: 40px;
+            background-color: #fe390c;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            left: auto;
+            top: auto;
+            bottom: 4px;
+        }
+
+        .testimonial-btn-prev {
+            right: 64px;
+        }
+
+        .testimonial-btn-next {
+            right: 0;
+        }
+
+        .swiper-pagination {
+            position: absolute;
+            left: -3%;
+            display: flex;
+            justify-content: center;
+            gap: 4px;
+    
+            span {
+                width: 15px;
+                height: 3px;
+                background: #e0e0e0;
+                border-radius: 1px;
+            }
+
+            span.swiper-pagination-bullet-active {
+                background: #fe390c;
+            }
+        }
+    }
+
+
+
 }

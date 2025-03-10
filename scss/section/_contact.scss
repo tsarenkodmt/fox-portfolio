@@ -1,0 +1,76 @@
+.contact {
+    padding: 55px 150px 51px 150px;
+    background: url(../images/Bg.jpg);
+
+    .contact-info-text {
+        color: #fff;
+    }
+
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 95px;
+    }
+
+    &-left-info {
+        margin: 55px 0px 65px;
+        display: flex;
+        flex-direction: column;
+        gap: 42px;
+    }
+
+    .contact-phone,
+    .contact-email,
+    .contact-adress {
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+
+        span {
+            font-weight: 500;
+            font-size: 16px;
+            letter-spacing: -0.02em;
+            color: #fff;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 14px;
+            letter-spacing: -0.02em;
+            color: $text-color-grey;
+        }
+    }
+
+    .contact-phone {
+        ::before {
+            content: url(../../images/Call.svg);
+            margin-right: 10px;
+        }
+    }
+
+    .contact-left-social {
+        display: flex;
+        gap: 28px;
+    }
+
+    .contact-tight-title {
+        @include fontSecondary(24px,400);
+        color: #fff;
+        margin-bottom: 64px;
+
+        span{
+            color: $primary-color-main-color;
+        }
+    }
+
+    .input-name {
+        border-radius: 2px;
+        width: 312px;
+        height: 54px;
+        background: rgba(202, 205, 209, 0.1);
+        padding: 20px 16px 20px;
+        
+    }
+
+}
