@@ -354,18 +354,18 @@
                             <p class="contact-info-text inner-title">Contact</p>
                         </div>
                         <div class="contact-left-info">
-                            <div class="contact-phone">
-                                <span>Phone</span>
-                                <p>(219) 555-0114</p>
-                            </div>
-                            <div class="contact-email">
-                                <span>Email</span>
-                                <p>robertfox@example.com</p>
-                            </div>
-                            <div class="contact-adress">
-                                <span>Address</span>
-                                <p>4517 Washington Ave. Manchester, Kentucky 39495</p>
-                            </div>
+                            <ul class="contact-phone">
+                                <li class="contact-title">Phone</li>
+                                <li class="contact-info">(219) 555-0114</li>
+                            </ul>
+                            <ul class="contact-email">
+                                <li class="contact-title">Email</li>
+                                <li class="contact-info">robertfox@example.com</li>
+                            </ul>
+                            <ul class="contact-adress">
+                                <li class="contact-title">Address</li>
+                                <li class="contact-info">4517 Washington Ave. Manchester, Kentucky 39495</li>
+                            </ul>
                         </div>
                         <div class="contact-left-social">
                             <img src="./images/linkedin.svg" alt="">
@@ -375,20 +375,36 @@
                         </div>
                     </div>
                     <div class="contact-right">
-                        <p class="contact-tight-title">I’m always open to discussing <span>product design work</span> or
+                        <p class="contact-right-title">I’m always open to discussing <span>product design work</span> or
                             partnership </p>
-                        <div class="contact-right-form">
+                        <form class="contact-right-form">
                             <div class="contact-user-info">
-                                <input type="text" placeholder="Enter your name here" class="input-name">
-                                <input type="text" placeholder="Enter your email address" class="input-email">
+                                <div class="contact-user-info-name">
+                                <span class="input-name-text">Your name*</span>
+                                <input type="text" placeholder="Enter your name here" required class="input-name">
                             </div>
-                            <input type="text" placeholder="Write your message here" class="input-message">
+                                <div class="contact-user-info-email">
+                                    <span class="input-email-text">Email Address*</span>
+                                    <input type="email" placeholder="Enter your email address" required class="input-email">
+                                </div>
+                            </div>
+                            <div class="contact-user-info-message">
+                                <span class="input-message-text">Message</span>
+                                <textarea placeholder="Write your message here" class="input-message"></textarea>
+                            </div>
                             <button class="contact-right-btn">send message</button>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- End contact section -->
+         <footer class="footer">
+            <div class="container">
+                <p>Copyright <span class="year"></span> All Right Reserved
+                </p>
+            </div>
+         </footer>
     </main>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>

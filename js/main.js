@@ -53,3 +53,6 @@ let swiperTestimonial = new Swiper('.testimonials-slider', {
         }
 
 });
+
+const year = document.querySelector(".year");
+year.innerText = new Date().getFullYear();

@@ -21,6 +21,13 @@ button {
   cursor: pointer;
 }
 
+input,
+textarea {
+  border: none;
+  outline: none;
+  resize: none;
+}
+
 .container {
   max-width: 1140px;
   width: 100%;
@@ -74,7 +81,7 @@ body {
 
 .header-fixed {
   position: fixed;
-  z-index: 3;
+  z-index: 30;
   top: 0;
   left: 0;
   right: 0;
@@ -608,8 +615,13 @@ body {
 }
 
 .contact {
-  padding: 55px 150px 51px 150px;
-  background: url(../images/Bg.jpg);
+  padding: 55px 0px 51px;
+  background: url(../images/Bg.jpg) no-repeat center;
+  background-size: cover;
+}
+.contact-left {
+  max-width: 390px;
+  width: 100%;
 }
 .contact .contact-info-text {
   color: #fff;
@@ -629,35 +641,67 @@ body {
 .contact .contact-phone,
 .contact .contact-email,
 .contact .contact-adress {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 9px;
-}
-.contact .contact-phone span,
-.contact .contact-email span,
-.contact .contact-adress span {
   font-weight: 500;
-  font-size: 16px;
   letter-spacing: -0.02em;
+  padding-left: 35px;
+}
+.contact .contact-phone .contact-title,
+.contact .contact-email .contact-title,
+.contact .contact-adress .contact-title {
+  font-size: 16px;
   color: #fff;
 }
-.contact .contact-phone p,
-.contact .contact-email p,
-.contact .contact-adress p {
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: -0.02em;
+.contact .contact-phone .contact-info,
+.contact .contact-email .contact-info,
+.contact .contact-adress .contact-info {
   color: #a9a9aa;
 }
 .contact .contact-phone ::before {
-  content: url(../../images/Call.svg);
-  margin-right: 10px;
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url(../images/Call.svg) no-repeat center;
+}
+.contact .contact-email ::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url(../images/Message.svg) no-repeat center;
+}
+.contact .contact-adress ::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url(../images/location.svg) no-repeat center;
 }
 .contact .contact-left-social {
   display: flex;
   gap: 28px;
 }
-.contact .contact-tight-title {
+.contact-right {
+  max-width: 654px;
+  width: 100%;
+}
+.contact .contact-right-title {
   font-size: 24px;
   font-weight: 400;
   line-height: 1;
@@ -665,13 +709,74 @@ body {
   color: #fff;
   margin-bottom: 64px;
 }
-.contact .contact-tight-title span {
+.contact .contact-right-title span {
   color: #fe390c;
 }
-.contact .input-name {
+.contact .contact-user-info {
+  display: flex;
+  gap: 30px;
+}
+.contact .contact-user-info-message {
+  margin: 32px 0px 48px;
+}
+.contact .contact-user-info .input-name-text,
+.contact .contact-user-info .input-email-text {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin-bottom: 12px;
+  display: block;
+}
+.contact .input-message-text {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin-bottom: 12px;
+  display: block;
+}
+.contact .input-name,
+.contact .input-email {
   border-radius: 2px;
   width: 312px;
   height: 54px;
-  background: rgba(202, 205, 209, 0.1);
+  background: rgba(202, 205, 209, 0.4);
   padding: 20px 16px 20px;
+  color: #a9a9aa;
+}
+.contact .input-message {
+  border-radius: 2px;
+  width: 100%;
+  height: 124px;
+  background: rgba(202, 205, 209, 0.4);
+  padding: 16px;
+  color: #a9a9aa;
+}
+.contact .contact-right-btn {
+  border-radius: 4px;
+  padding: 16px 24px;
+  width: 148px;
+  height: 47px;
+  background: #fe390c;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.footer {
+  background: #0c0c0e;
+  padding: 30px 0px;
+}
+.footer p {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.43;
+  font-family: "Montserrat", serif;
+  letter-spacing: -0.04em;
+  text-align: center;
+  color: #a9a9aa;
+}
+.footer p span {
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */
